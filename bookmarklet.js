@@ -26,7 +26,7 @@ function releasetheKraken() {
   });
     
     for (i=0; i<urls.length; i++) {
-          ourModal += "<div style='width: 150px; margin: 10px; float: left;'><img style='max-width: 150px;' src='" + urls[i] +"'><a style='text-align: center; color: #fff; background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download</a></div>";
+          ourModal += "<div style='width: 150px; margin: 10px; float: left;'><img style='max-width: 150px;' src='" + urls[i] +"'><a style='float: left; text-align: center; color: #fff; background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download</a></div>";
         
       }
     ourModal += '</div>';
