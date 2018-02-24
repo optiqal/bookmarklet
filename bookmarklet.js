@@ -23,7 +23,7 @@ function releasetheKraken() {
       
   });
     for (i=0; i<urls.length; i++) {
-          var a = "<div style='margin: 10px; float: left;'><img style='max-width: 100px;' src='urls[i]'><a style='background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download Image</a></div>";
+          var a = "<div style='margin: 10px; float: left;'><img style='max-width: 100px;' src='" + urls[i] +"'><a style='background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download Image</a></div>";
         $('body').append(a);
       }
 }
