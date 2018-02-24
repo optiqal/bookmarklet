@@ -12,6 +12,8 @@ function releasetheKraken() {
    console.log("BOOTED UP BABY");
     let urls = [];
     
+    let ourModal = "<div style='position: absolute; top: 50px; border-radius: 10px; background: #fff; width: 80%; left: 10%;'>";
+    
     $('div').each( function() {
       if ( $(this).css('background-image').indexOf('.jpg') > 1 ) {
           console.log("FOUND ONE");
@@ -24,7 +26,9 @@ function releasetheKraken() {
   });
     
     for (i=0; i<urls.length; i++) {
-          var a = "<div style='margin: 10px; float: left;'><img style='max-width: 100px;' src='" + urls[i] +"'><a style='background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download Image</a></div>";
-        $('body').append(a);
+          var ourModal += "<div style='margin: 10px; float: left;'><img style='max-width: 100px;' src='" + urls[i] +"'><a style='background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download Image</a></div>";
+        
       }
+    ourModal += '</div>';
+    $('body').append(ourModal);
 }
