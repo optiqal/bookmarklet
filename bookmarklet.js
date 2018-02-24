@@ -15,8 +15,8 @@ function releasetheKraken() {
     $('div').each( function() {
       if ( $(this).css('background-image').indexOf('.jpg') > 1 ) {
           console.log("FOUND ONE");
-          if (urls.indexOf($(this).css('background-image').substr(5, ($(this).css('background-image').length-7)) === -1) {
-            urls.push($(this).css('background-image').substr(5, ($(this).css('background-image').length-7));
+          if (urls.indexOf($(this).css('background-image').substr(5, ($(this).css('background-image').length-7))) === -1) {
+            urls.push($(this).css('background-image').substr(5, ($(this).css('background-image').length-7)));
           }
           
       }
