@@ -15,13 +15,14 @@ function releasetheKraken() {
     $('div').each( function() {
       if ( $(this).css('background-image').indexOf('.jpg') > 1 ) {
           console.log("FOUND ONE");
-          if (urls.indexOf($(this).css('background-image')) === -1) {
-            urls.push($(this).css('background-image'));
+          if (urls.indexOf($(this).css('background-image').substr(5, ($(this).css('background-image').length-7)) === -1) {
+            urls.push($(this).css('background-image').substr(5, ($(this).css('background-image').length-7));
           }
           
       }
       
   });
+    
     for (i=0; i<urls.length; i++) {
           var a = "<div style='margin: 10px; float: left;'><img style='max-width: 100px;' src='" + urls[i] +"'><a style='background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download Image</a></div>";
         $('body').append(a);
