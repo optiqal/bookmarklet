@@ -12,7 +12,7 @@ function releasetheKraken() {
    console.log("BOOTED UP BABY");
     let urls = [];
     
-    let ourModal = "<div style='position: absolute; top: 50px; border-radius: 10px; background: #fff; width: 80%; left: 10%;'>";
+    let ourModal = "<div style='z-index: 1000; position: fixed; top: 50px; border-radius: 10px; background: #fff; width: 80%; left: 10%;'>";
     
     $('div').each( function() {
       if ( $(this).css('background-image').indexOf('.jpg') > 1 ) {
@@ -26,7 +26,7 @@ function releasetheKraken() {
   });
     
     for (i=0; i<urls.length; i++) {
-          ourModal += "<div style='margin: 10px; float: left;'><img style='max-width: 100px;' src='" + urls[i] +"'><a style='background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download Image</a></div>";
+          ourModal += "<div style='width: 100px; margin: 10px; float: left;'><img style='max-width: 100px;' src='" + urls[i] +"'><a style='background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download Image</a></div>";
         
       }
     ourModal += '</div>';
