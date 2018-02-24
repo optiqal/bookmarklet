@@ -24,6 +24,6 @@ function releasetheKraken() {
   });
     for (i=0; i<urls.length; i++) {
           var a = "<a href='" + urls[i] + "' download='img.jpg'>Download Image</a>";
-        $('body').prepend(a);
+        $('body').append(a);
       }
 }
