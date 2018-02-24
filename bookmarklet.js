@@ -12,7 +12,7 @@ function releasetheKraken() {
    console.log("BOOTED UP BABY");
     let urls = [];
     
-    let ourModal = "<div style='box-shadow: 0 0 10px #000; z-index: 1000; position: fixed; top: 150px; border-radius: 10px; background: #fff; width: 80%; left: 10%;'><h2>Download Images Below</h2>";
+    let ourModal = "<div style='box-shadow: 0 0 10px #000; z-index: 1000; position: fixed; top: 150px; border-radius: 10px; background: #fff; width: 80%; left: 10%;'><h4>Download Images Below</h4>";
     
     $('div').each( function() {
       if ( $(this).css('background-image').indexOf('.jpg') > 1 ) {
