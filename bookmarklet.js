@@ -23,7 +23,7 @@ function releasetheKraken() {
       
   });
     for (i=0; i<urls.length; i++) {
-          var a = "<a style="background: #000; border-radius: 10px; padding: 10px; margin: 10px" href='" + urls[i] + "' download='img.jpg'>Download Image</a>";
+          var a = "<a style='background: #000; border-radius: 10px; padding: 10px; margin: 10px' href='" + urls[i] + "' download='img.jpg'>Download Image</a>";
         $('body').append(a);
       }
 }
